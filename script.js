@@ -69,12 +69,12 @@ $('#rainbow').on("click", function() {
   $('div').remove('.squares');
   $('div').remove('.colorSquares');
 // Asks how many squares to make
-  var squaresWide = prompt("Pick a grid size from 2 to 36.");
+  var squaresWide = prompt("Enter grid size from 2 to 36.");
   if (squaresWide === null) { // If promt equal cancel, make standart squares
     squaresWide = 16;
   }
   while(squaresWide > 36 || squaresWide < 2) { // While prompt equal to big or to low numbers, keep asking
-    var squaresWide = prompt("Pick a grid size from 2 to 36.");
+    var squaresWide = prompt("Enter grid size from 2 to 36.");
   }
    //prompt returns a string...use parseInt to turn that number string into an integer
   columnWidthCount = parseInt(squaresWide);
