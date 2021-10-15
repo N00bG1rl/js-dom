@@ -1,31 +1,64 @@
 body {
-  margin: 0 auto;
-}
-button {
-  padding: 10px 25px;
-  margin: 20px;
-  text-transform: uppercase;
-  font-size: 25px;
-  background-color: #595959;
-  color: #e60000;
   position: relative;
-  border: 1px solid #e60000;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #527a7a;
+  min-width: 650px;
 }
-h1,h2 {
+h1 {
+  margin: 0;
+  padding-top: 20px;
+}
+h1,
+h2 {
   text-align: center;
   color: #fff;
   font-weight: 400;
   letter-spacing: .6px;
   font-family: arial;
 }
-#container {
-  width: 100%; height: 100%;
-  background-color: #527a7a;
+.logo {
+  width: 80px;
+  top: 0;
+  left: 0;
   position: absolute;
-  overflow: hidden;
+  z-index: 3;
+  padding: 20px;
+  background-color: transparent;
+}
+.buttons {
+  font-size: 0;
+  padding-bottom: 200px;
+}
+button {
+  width: 300px;
+  height: 60px;
+  padding: 10px 25px;
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: #595959;
+  color: #fff;
+  position: relative;
+  border: 1px solid #E61B25;
+  transition: all .3s;
+  cursor: pointer;
+}
+button#twoC:hover,
+button#rainbow:hover {
+  border: 2px solid #E61B25;
+  color: #E61B25;
+  background-color: #353333;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 #board {
-  width: 605px; height: 605px;
+  width: 605px;
+  height: 605px;
   border: 2px solid black;
   position: relative;
   font-size: 0;
@@ -44,7 +77,7 @@ h1,h2 {
   box-sizing: border-box;
 }
 .hover {
-  background-color: #e60000;
+  background-color: #E61B25;
 }
 .colorSquares {
   margin: 0;
@@ -53,4 +86,62 @@ h1,h2 {
   background-color: #595959;
   display: inline-block;
   box-sizing: border-box;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  padding-bottom: 20px;
+  bottom: 0;
+  background-color: #527a7a;
+}
+footer::before {
+  content: "";
+  display: block;
+  height: 1px;
+  border-top: 1px solid rgb(226, 226, 226, 1);
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+footer .social ul {
+  padding: 0;
+  font-size: 0;
+}
+footer .social li {
+  padding: 10px 5px;
+  display: inline-block;
+}
+.social a svg {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  fill: #fff;
+  transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+}
+.social a svg:hover {
+  fill: #E61B25;
+}
+.copyright {
+  font-size: 0;
+}
+.copyright span,
+.copyright a {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+}
+.copyright span {
+  padding: 5px;
+}
+.copyright a:hover {
+  color: #E61B25;
 }
