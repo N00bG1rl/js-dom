@@ -16,7 +16,7 @@ November 21, 2017
 
 # View on browser
 
-## [https://n00bg1rl.github.io/sketch/](https://n00bg1rl.github.io/sketch/)
+## [https://n00bg1rl.github.io/js-dom/](https://n00bg1rl.github.io/js-dom/)
 
 # View as image
 
